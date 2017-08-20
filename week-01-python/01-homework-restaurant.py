@@ -15,6 +15,7 @@ if rest_name == "한식":
     print(random.choice(list_korean_rest))
 elif rest_name == "일식":
     print(random.choice(list_japanese_rest))
-else:
-    rest_name == "중식"
+elif rest_name == "중식":
     print(random.choice(list_chinese_rest))
+else:
+    print("한식, 중식, 일식 중에서 선택하셔야 합니다.")

@@ -16,7 +16,10 @@ def multiplication():
 
     # '2단'과 같이 문자가 들어간 입력을 했을 때 예외처리 & 재귀함수 호출
     except ValueError:
-        return "2에서 9사이의 숫자만 입력해주세요. (예:'2단'이라고 입력하지 말고 숫자'2'만 입력해 주세요.)"
+        print("2에서 9사이의 숫자만 입력해주세요. (예:'2단'이라고 입력하지 마세요)")
+        multiplication()
+    except:
+        print("알 수 없는 에러가 발생하였습니다.")
         multiplication()
 
 multiplication()
